@@ -1,0 +1,12 @@
+./Temp
+./ProjectSettings
+./Library
+/Library
+/Logs
+/obj/Debug
+/Packages
+/ProjectSettings
+/Temp
+/UserSettings
+/.vs
+/UpgradeLog.htm
