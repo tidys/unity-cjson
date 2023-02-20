@@ -33,7 +33,6 @@ public class CallCJson : MonoBehaviour
     private static extern int cJSON_GetArraySize(IntPtr obj);
     [DllImport("cjson")]
     private static extern IntPtr cJSON_GetArrayItem(IntPtr obj, int index);
-    
     [DllImport("cjson")]
     private static extern double cJSON_GetNumberValue(IntPtr obj);
     [DllImport("cjson")]
