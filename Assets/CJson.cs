@@ -42,7 +42,22 @@ public class CJson
     {
         return new CJson(jsonString);
     }
-   
+    public int size()
+    {
+        if (cJSON_IsArray(this.ptr))
+        {
+            return cJSON_GetArraySize(this.ptr);
+        }
+        else if (cJSON_IsString(this.ptr))
+        {
+            return this.toString().Length;
+        }
+        else if(cJSON_IsObject(this.ptr))
+        {
+
+        }
+        return 0;
+    }
     public string toString()
     {
         if (cJSON_IsString(this.ptr))
